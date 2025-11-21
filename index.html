@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James' Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="navbar">
+        <div class="logo">James' Portfolio</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+      <div class="intro">
+        <p class="eyebrow">Hello, I am</p>
+        <h1>James Santillan</h1>
+        <h2>UI/UX Designer</h2>
+      </div>
+    </header>
+
+    <main>
+      <section class="projects" aria-labelledby="projects-heading">
+        <div class="section-header">
+          <p class="eyebrow">Selected Work</p>
+          <h3 id="projects-heading">Selected Projects</h3>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <img
+              class="project-image"
+              src="assets/idaan.png"
+              alt="Screenshot of i.Daan complaint platform"
+              loading="lazy"
+            />
+            <div class="project-tag">2024 — 2025</div>
+            <h4>i.Daan</h4>
+            <p>
+              Led end-to-end UX/UI design and front-end development of an
+              AI-driven complaint platform for DPWH Lipa, reducing processing
+              time from 45 minutes to under 4 minutes.
+            </p>
+            <div class="project-meta">
+              <span><strong>Project Type:</strong> Product Design · UX/UI · Front-End</span>
+              <span><strong>Client:</strong> DPWH Lipa</span>
+            </div>
+            <a
+              class="pill-button"
+              href="project-idaan.html"
+              aria-label="View i.Daan project details"
+            >
+              View Case Study
+            </a>
+          </article>
+          <article class="project-card">
+            <img
+              class="project-image"
+              src="assets/fitech.png"
+              alt="Screenshot of FITech gym management app"
+              loading="lazy"
+            />
+            <div class="project-tag">2025</div>
+            <h4>FITech</h4>
+            <p>
+              Designed a mobile app concept for Barako Fitness that unifies
+              memberships, rentals, bookings, and loyalty rewards into one
+              intuitive interface.
+            </p>
+            <div class="project-meta">
+              <span><strong>Project Type:</strong> UI Design · Mobile Concept</span>
+              <span><strong>Client:</strong> CrossFit Gym</span>
+            </div>
+            <a
+              class="pill-button"
+              href="project-fitech.html"
+              aria-label="View FITech project details"
+            >
+              View Case Study
+            </a>
+          </article>
+          <article class="project-card">
+            <img
+              class="project-image"
+              src="assets/fithealth.png"
+              alt="Screenshot of FitHealth wellness app"
+              loading="lazy"
+            />
+            <div class="project-tag">2023</div>
+            <h4>FitHealth</h4>
+            <p>
+              Created a wellness app interface focused on meal planning,
+              recipe discovery with dietary filters, and automated grocery
+              lists for healthier routines.
+            </p>
+            <div class="project-meta">
+              <span><strong>Project Type:</strong> UI Design · Mobile Concept</span>
+              <span><strong>Client:</strong> Academic / Personal</span>
+            </div>
+            <a
+              class="pill-button"
+              href="project-fithealth.html"
+              aria-label="View FitHealth project details"
+            >
+              View Case Study
+            </a>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> James Santillan. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

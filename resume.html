@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James Santillan Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="logo">James' Portfolio</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+      <div class="intro">
+        <p class="eyebrow">Experience snapshot</p>
+        <h1>Resume</h1>
+        <h2>4th-year IT student pursuing a UI/UX internship</h2>
+      </div>
+    </header>
+
+    <main>
+      <section class="resume" aria-labelledby="resume-heading">
+        <div class="section-header">
+          <p class="eyebrow">Career</p>
+          <h3 id="resume-heading">Professional Highlights</h3>
+        </div>
+        <div class="resume-content">
+          <p>
+            I am a senior BS Information Technology student focused on crafting
+            thoughtful product experiences and preparing for a UI/UX design
+            internship. Across academic and client projects, I regularly lead
+            UX strategy, interface design, and front-end implementation—owning
+            discovery workshops, wireframes, high-fidelity prototypes, and React
+            builds to bring ideas into usable products.
+          </p>
+          <a
+            class="resume-button"
+            href="Santillan%20Resume.pdf"
+            aria-label="Download resume PDF"
+            download
+          >
+            Download Resume
+          </a>
+        </div>
+      </section>
+
+      <section class="projects" aria-labelledby="experience-heading">
+        <div class="section-header">
+          <p class="eyebrow">Project Leadership</p>
+          <h3 id="experience-heading">Hands-on Contributions</h3>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-tag">Lead UI/UX · Front-End</div>
+            <h4>i.Daan · DPWH Lipa</h4>
+            <p>
+              Drove the UX vision, validated flows with civil service
+              stakeholders, and built the React/React Native interfaces that cut
+              complaint processing times from 45 minutes to less than 4 minutes.
+            </p>
+            <a class="pill-button" href="project-idaan.html">View case study</a>
+          </article>
+          <article class="project-card">
+            <div class="project-tag">Lead UI/UX</div>
+            <h4>FITech · CrossFit Gym</h4>
+            <p>
+              Designed the mobile experience system for memberships, rentals, and
+              class bookings, focusing on seamless member journeys and loyalty
+              incentives for an upcoming launch.
+            </p>
+            <a class="pill-button" href="project-fitech.html">View case study</a>
+          </article>
+          <article class="project-card">
+            <div class="project-tag">Product Designer</div>
+            <h4>FitHealth · Academic</h4>
+            <p>
+              Created a wellness companion app with personalized meal plans and
+              grocery automation, showcasing my approach to research synthesis
+              and UI system design.
+            </p>
+            <a class="pill-button" href="project-fithealth.html">View case study</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> James Santillan. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

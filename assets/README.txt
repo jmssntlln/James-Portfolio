@@ -1,0 +1,2 @@
+Project image assets placeholder.
+

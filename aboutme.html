@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About James Santillan</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="logo">James' Portfolio</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+      <div class="intro">
+        <p class="eyebrow">Nice to meet you</p>
+        <h1>About James Santillan</h1>
+        <h2>Designing with empathy and intent</h2>
+      </div>
+    </header>
+
+    <main>
+      <section class="about" aria-labelledby="about-heading">
+        <div class="section-header">
+          <p class="eyebrow">Biography</p>
+          <h3 id="about-heading">Who I Am</h3>
+        </div>
+        <div class="about-content">
+          <div class="about-photo">
+            <img
+              alt="Portrait of James Santillan"
+              src="profilepicture.JPG"
+            />
+          </div>
+          <div class="about-text">
+            <p>
+              Growing up in Batangas, I developed a natural curiosity for how
+              technology can make everyday tasks simpler and more efficient. I’ve
+              always enjoyed figuring out how things work and finding small ways
+              to improve the experiences people interact with. Over time, this
+              interest led me to explore different areas of tech—from design and
+              development to analytics and project work. Eventually, I found my
+              strength in building clean, user-friendly digital products.
+            </p>
+            <p>
+              I’ve worked on projects like an AI-powered complaint and feedback
+              system for DPWH Batangas IV, where I handled frontend development
+              and UI/UX design for both web and mobile. I enjoy working with
+              tools like React, React Native, Tailwind CSS, Firebase, and design
+              platforms such as Figma and Canva. I value collaborating with
+              teams, solving problems through thoughtful design, and creating
+              solutions that are both functional and easy to use.
+            </p>
+            <p>
+              Along the way, I’ve earned recognition such as winning first place
+              in the 2025 iPitch Competition and completing training in
+              SmartBooks ERP and Power BI. At my core, I’m someone who values
+              clarity, good design, and continuous learning—and I’m always
+              excited to build, explore, and create things that help people in
+              practical and meaningful ways.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> James Santillan. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
