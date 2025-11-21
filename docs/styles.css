@@ -268,7 +268,7 @@ footer {
   background: var(--card);
   height: fit-content;
   position: sticky;
-  top: 2rem;
+  top: 4rem; /* Adjusted top offset */
   box-shadow: var(--shadow);
 }
 
@@ -744,6 +744,14 @@ footer {
   padding: 1rem 0;
 }
 
+.centered-two-col {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem; /* Matches existing gap */
+  margin: 0 auto;
+}
+
+/* --- MOBILE BREAKPOINT FIXES --- */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -760,6 +768,13 @@ footer {
 
   .detail-grid {
     grid-template-columns: 1fr;
+  }
+  
+  /* FIX: Disables sticky position on mobile phones */
+  .detail-sidebar {
+    position: static; 
+    top: auto;
+    margin-bottom: 2rem;
   }
 
   .resume-content {
@@ -792,10 +807,4 @@ footer {
   .results-section h4 {
     font-size: 1.25rem;
   }
-}
-.centered-two-col {
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem; /* Matches existing gap */
-  margin: 0 auto;
 }
