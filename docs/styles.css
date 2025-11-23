@@ -497,6 +497,26 @@ footer {
   color: var(--text);
 }
 
+.solution-summary-box ul {
+  margin: 1.25rem 0 0 0;
+  padding-left: 1.75rem;
+  line-height: 1.9;
+}
+
+.solution-summary-box li {
+  margin-bottom: 0.65rem;
+  color: var(--text);
+  position: relative;
+}
+
+.solution-summary-box li::marker {
+  color: var(--accent);
+}
+
+.solution-summary-box li:last-child {
+  margin-bottom: 0;
+}
+
 .final-design-section {
   margin: 4rem 0 2rem;
   padding-top: 3rem;
@@ -744,11 +764,33 @@ footer {
   padding: 1rem 0;
 }
 
-.centered-two-col {
+/* --- NEW RESPONSIVE LAYOUT CLASSES FOR CAPTIONS --- */
+
+.two-col-captions {
   display: flex;
   justify-content: center;
-  gap: 2.5rem; /* Matches existing gap */
+  gap: 2.5rem;
   margin: 0 auto;
+}
+
+.two-col-captions .mockup-caption {
+  flex-basis: 50%; 
+  max-width: 50%;
+  min-width: 0; 
+}
+
+.three-col-captions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.three-col-captions .mockup-caption {
+  flex-basis: 33%; 
+  max-width: 33%;
+  min-width: 0; 
 }
 
 /* --- MOBILE BREAKPOINT FIXES --- */
@@ -806,5 +848,25 @@ footer {
 
   .results-section h4 {
     font-size: 1.25rem;
+  }
+
+  /* MOBILE FIX FOR NEW CAPTION LAYOUTS (Two and Three Columns) */
+  .two-col-captions {
+    flex-direction: column; /* Stack vertically on small screens */
+    gap: 1.5rem;
+  }
+  
+  .two-col-captions .mockup-caption {
+    max-width: 100%; /* Take up full width */
+  }
+
+  .three-col-captions {
+    flex-direction: column; /* Stack vertically on small screens */
+    gap: 1.5rem;
+    padding: 0; /* Remove horizontal padding added for 3-col desktop layout */
+  }
+  
+  .three-col-captions .mockup-caption {
+    max-width: 100%; /* Take up full width */
   }
 }
